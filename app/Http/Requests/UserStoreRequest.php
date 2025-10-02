@@ -30,15 +30,4 @@ class UserStoreRequest extends FormRequest
         ];
     }
 
-    public function messages()
-    {
-        return [
-            'required' => ':attribute harus diisi',
-            'string' => ':attribute harus berupa string',
-            'max' => ':attribute maksimal :max karekter',
-            'min' => ':attribute minimal :min karekter',
-            'unique' => ':attribute sudah ada',
-            'email' => ':attribute harus berupa email',
-        ];
-    }
 }
