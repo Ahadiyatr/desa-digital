@@ -6,7 +6,6 @@ use App\Interface\HeadOfFamilyRepositoryInterface;
 use App\Models\HeadOfFamily;
 use Exception;
 use Illuminate\Support\Facades\DB;
-use PhpParser\Node\Stmt\TryCatch;
 
 class HeadOfFamilyRepository implements HeadOfFamilyRepositoryInterface
 {

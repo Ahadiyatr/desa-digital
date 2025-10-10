@@ -8,7 +8,6 @@ use App\Http\Requests\HeadOfFamilyUpdateRequest;
 use App\Http\Resources\HeadOfFamilyResource;
 use App\Http\Resources\PaginateResource;
 use App\Interface\HeadOfFamilyRepositoryInterface;
-use App\Models\HeadOfFamily;
 use App\Repositories\HeadOfFamilyRepository;
 use Illuminate\Http\Request;
 
