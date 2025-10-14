@@ -141,7 +141,7 @@ class FamilyMemberRepository implements FamilyMemberRepositoryInterface
             DB::commit();
 
             return $familyMember;
-        } catch (\Throwable $e) {
+        } catch (\Exception $e) {
             DB::rollBack();
 
             throw new Exception($e->getMessage());
