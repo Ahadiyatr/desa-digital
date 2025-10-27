@@ -66,7 +66,7 @@ class FamilyMemberController extends Controller
         try {
             $familyMember = $this->familyMemberRepository->create($request);
 
-            return ResponseHelper::jsonResponse(true, 'Data Anggota Keluarga Berhasil Ditambahkan', new FamilyMemberResource($familyMember), 200);
+            return ResponseHelper::jsonResponse(true, 'Data Pendaftar Event Berhasil Ditambahkan', new FamilyMemberResource($familyMember), 200);
         } catch (\Exception $e) {
             return ResponseHelper::jsonResponse(false, $e->getMessage(), null, 500);
         }

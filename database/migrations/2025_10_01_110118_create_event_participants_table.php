@@ -17,8 +17,8 @@ return new class extends Migration
             $table->uuid('event_id');
             $table->foreign('event_id')->references('id')->on('events');
 
-            $table->uuid('head_of_family');
-            $table->foreign('head_of_family')->references('id')->on('head_of_families');
+            $table->uuid('head_of_family_id');
+            $table->foreign('head_of_family_id')->references('id')->on('head_of_families');
 
             $table->integer('quantity');
             $table->decimal('total_price');

@@ -64,7 +64,7 @@ class HeadOfFamilyController extends Controller
         try{
             $headOfFamily = $this->headOfFamilyRepository->create($request);
 
-            return ResponseHelper::jsonResponse(true, 'Kepala Keluarga Berhasil Ditambahkan', new HeadOfFamilyResource($headOfFamily), 201);
+            return ResponseHelper::jsonResponse(true, 'Kepala Keluarga Berhasil Ditambahkan', new HeadOfFamilyResource($headOfFamily), 200);
         } catch (\Exception $e) {
             return ResponseHelper::jsonResponse(false, $e->getMessage(), null, 500);
         }
