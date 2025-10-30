@@ -117,7 +117,6 @@ class EventController extends Controller
      */
     public function destroy(string $id)
     {
-
         try {
             $event = $this->eventRepository->getById($id);
 
